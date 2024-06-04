@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sujal Nakarmi, 22067808,np01cp4a220192 ">
+  <meta name="description" content="Product Page">
+  <meta name="keyword" content="HTML,CSS,JavaScript">
+    <link rel="stylesheet" href="../CSS BONSAI/Bonsai Style.css"><!--Linking external CSS-->
+    <title>Product Page</title>
+
+	<!--Internal CSS-->
+	<style type="text/css">
+		.slider 
+		  {
+		  
+		  /*
+		  box-sizing property allows us to include the padding and border in an element's total width and height.
+		  */
+		  box-sizing: border-box;
+		  /*The overflow is clipped, and the rest of the content will be invisible*/
+		  overflow: hidden;
+		  box-shadow: 5px 5px 10px lightgreen;
+		  }
+	
+		.slider img 
+		  {
+		  width: 500px;
+		  height: 400px;
+		  }
+		  
+		  
+	  </style>
+</head>
+<body>
+	
+	
+	<title>Home page</title>
+	</head>
+	<body>
+	<!-- allocating divisions-->
+	<!--creating navbar-->
+	<nav class="navbar background" >
+	<ul class="nav-list">
+	<!--logooo-->
+	
+	
+	<li><a href="../home.html">Home</a></li>
+	<li><a href="../Web/BLOGGG.html">Blog</a></li>
+	<li><a href="#products" class="active">Products</a></li>
+	<li><a href="../Research/research.html">Research</a></li>
+	<li><a href="../aboutus/AboutUs/Aboutus.html">AboutUs</a></li>
+	
+	</ul>
+	
+
+	
+	</nav>
+	
+
+	<section class="background firstSection">
+	   <div class="box-main">
+		<div class="firstHalf ">
+		<p class="text-big">Products</p>
+		
+		<div class="buttons">
+		<button class="btn">Shop Now</button>
+		</div>
+		</div>
+		<div class="secondHalf">
+		<img src="../images/logo.jpg" alt="Laptop image">
+		</div>
+	   </div></section> 
+
+
+    <!--BeGginning section ends here-->
+     
+
+
+
+	 <section ><!--Using section tag to create a section called Top Picks-->
+
+		<h1 class="Sales">Top <span>Picks</span></h1><!---->
+          <div class="bestsales"><!--main div -->
+			<div class="BSP">
+				<img src="../images/2.jpg" ><!--images linked from another folder of img-->
+				<div class="BSPdesc"><!--div called to align the desc of product t center-->
+				<h1>Best Sales</h1>
+
+               <h2 style="padding-bottom: 5px;"> Rock Juniper</h2>
+			  <p style="padding-bottom: 5px;"> <b>Rs 4200</b></p>
+				<p>Juniper are one of the most popular species of tree. They are capable of enduring both hot and
+					<a href="RockJupiter.html">more...</a>
+				</p>
+               </div>
+				<button class="add" type="submit" onclick="openPopup()">Add To Cart</button><!--button made to
+				add the product to cart and made it functional with javascript-->
+				<div class="popup" id="popup">
+					<img src="../images/tick.png" >
+					<h2>Thank You!</h2>
+					<p>Your Product has been added to cart.</p>
+					<button type="button" onclick="closePopup()">Back</button>
+				</div>
+
+			</div>
+
+			<div class="BSP">
+				<img src="../images/bestsales2.jpg">
+				<div class="BSPdesc">
+				<h1>Best Sales</h1>
+                 <h2 style="padding-bottom: 5px;">Bonsai Starter Kit</h2>
+				 <p style="padding-bottom: 5px;"><b>Rs 1200</b></p>
+				<p style="padding-bottom: 5px;">Bonsai Starter set is best for the beginnersThis Juniper Starter Kit includes our most 
+					popular young Juniper bonsai tree along with all the necessary <a href="BonsaiStarterKit.html">more...</a>.</p>
+					</div>
+					<button class="add" type="submit" onclick="openPopup1()">Add To Cart</button>
+				<div class="popup1" id="popup1">
+					<img src="../images/tick.png" >
+					<h2>Thank You!</h2>
+					<p>Your Product has been added to cart.</p>
+					<button type="button" onclick="closePopup1()">Back</button>
+				</div>
+			</div>
+
+			<div class="BSP">
+				<img src="../images/3.jpg" >
+				<div class="BSPdesc">
+				<h1>Best Sales</h1>
+
+				<h2 style="padding-bottom: 5px;">Golden Ficus Plant</h2>
+				<p style="padding-bottom: 5px;"><b>Rs 6000</b></p>
+				
+				<p style="padding-bottom: 5px;">This beautiful Golden Gate ficus bonsai tree is actually 
+					not as difficult to take <a href="GoldenFicusPlant.html">more...</a>
+					 </p>
+					</div>
+					<button class="add" type="submit" onclick="openPopup2()">Add To Cart</button>
+				<div class="popup2" id="popup2">
+					<img src="../images/tick.png" >
+					<h2>Thank You!</h2>
+					<p>Your Product has been added to cart.</p>
+					<button type="button" onclick="closePopup2()">Back</button>
+				</div>
+			</div>
+
+		  </div>
+	 </section>  
+	 
+   <!--Top Picks SECTION ends here-->
+
+
+
+      <section><!--Creating another section for discounted products-->
+		<h1 class="Sales"> On <span>Sale</span></h1><!--On and sale are seperated with h1 and span tag to design the 
+		second word with css-->
+		<div class="D"><!--Main div -->
+		 <div class="discount">
+		   <img src="../images/11.jpg" >
+		   <h1>10% OFF</h1>
+   
+		   <h2 style="padding-bottom: 5px;">Tupidanthus</h2><!--inline css used for space below text-->
+		   <p style="padding-bottom: 5px;"><del>Rs 350</del>
+			<b>Rs 300</b></p>
+		   <p style="padding-bottom: 5px;">It can reach heights of 
+			 <a href="Tupindanthus.html">more...</a></p><!--Linking more.. to another page for the full description-->
+		   <button type="submit" onclick="openPopup3()">Add To Cart</button>
+		   <div class="popup3" id="popup3">
+			<img src="../images/tick.png" >
+			<h2>Thank You!</h2>
+			<p>Your Product has been added to cart.</p>
+			<button type="button" onclick="closePopup3()">Back</button>
+		</div>
+		 </div>
+		 
+
+
+		 <div class="discount">
+			<img src="../images/12.jpg" >
+			<h1>20% OFF</h1>
+	
+			<h2 style="padding-bottom: 5px;">Dracanea</h2>
+			<p style="padding-bottom: 5px;">The corn plant is an oldie but goodie <a href="Dracanea.html">more...</a>
+			</p>
+			<p><del>Rs 1000</del>
+			<b>Rs 800</b></p>
+			<button type="submit" onclick="openPopup4()">Add To Cart</button>
+				<div class="popup4" id="popup4">
+					<img src="../images/tick.png" >
+					<h2>Thank You!</h2>
+					<p>Your Product has been added to cart.</p>
+					<button type="button" onclick="closePopup4()">Back</button>
+			</div>
+			</div>
+
+			<div class="discount">
+				<img src="../images/discount.png" >
+				<h1>25% OFF</h1>
+		
+				<h2 style="padding-bottom: 5px;">Chinese Elm</h2>
+				<p style="padding-bottom: 5px;"><del>Rs 1900</del><b> 1425</b></p>
+				<p style="padding-bottom: 5px;">Characterized by its leaf shape and stem development, the Chinese Elm is a 
+					great tree <a href="ChineseElm.html">more...</a></p>
+					<button type="submit" onclick="openPopup5()">Add To Cart</button>
+					<div class="popup5" id="popup5">
+						<img src="../images/tick.png" >
+						<h2>Thank You!</h2>
+						<p>Your Product has been added to cart.</p>
+						<button type="button" onclick="closePopup5()">Back</button>
+				</div>
+				</div>
+				</div>
+	  </section>
+
+	
+	  <!--Discounted products section ends here-->
+
+
+
+
+
+
+	  <section><!--Creating another section For one liited product-->
+		<h1 class="Sales"> Limited <span>Product</span></h1>
+		
+		<div class="row"><!--Main div-->
+        <div class="sproduct">
+			<div class="slider">
+			   <div id="img">
+			<img src="../images/discount.png" >
+			</div>
+			</div>
+			<div class="sproductdesc">
+              <h1>Chinese Elm Bonsai</h1><br>
+			  <h2>Rs 1425</h2>
+			  
+			 
+			  
+             <p> Characterized by its leaf shape and stem development, the Chinese Elm is a 
+			  great tree for beginners and intermediate enthusiasts who want to practice their 
+			  clip-and-grow pruning. Easy to train and easy to shape with vigorous branch and root growth. 
+			  Pruning the Chinese Elm Bonsai tree will continually produce fresh leaves to any shape you choose.</p>
+             <br>
+			  <h2>Bonsai Specification</h2><br><!--br tag is used to break a line-->
+			 <p> - Age Range: 5-7 Years Old<br>
+              - Height: 10" - 14” Tall Potted<br>
+              - Pot: 7” Ceramic Bonsai Pot<br>
+              - Classification: Broadleaf Semi Deciduous<br>
+              - Level: Beginner/Intermediate</p>
+			</div>
+		</div>
+	  </div>
+	 
+</section>
+
+
+<!--Limited offer section ends here-->
+
+
+
+
+<h1 class="Sales"> All <span>Products</span></h1>
+    <div class="main">
+		
+		<div class="plant">
+
+			<div class="content">
+			<img class="images" src="../images/1.jpg" > <!--Using external Css to adjust the width and height of img-->
+			  
+			</div>	
+
+			
+
+			<div class="desc"> 
+				<h1 style="padding-bottom: 7px;">Jade Plant</h1>
+				<p style="padding-bottom: 10px;">There are several jade plant benefits 
+					 <a href="ProductDescription.html">more...</a></p><!--Linking to another page for description-->
+				<p style="padding-bottom: 7px;"><b>RS 2000</b></p>
+			</div>
+			<img src="../images/star.png" style="width: 120px;" height="40px"><!--Inline css to adjust the img-->
+			<p>(46 Reviews)</p>
+			
+         
+		</div>
+
+		<div class="plant">
+			<div class="content">
+		<img class="images" src="../images/2.jpg">
+		
+		</div>
+		
+
+		<div class="desc"> <h1 style="padding-bottom: 5px;">Rock Juniper</h1>
+			
+			<p style="padding-bottom: 7px">Juniper are one of the most popular species of tree. They are capable of enduring both hot and
+				<a href="RockJupiter.html">more...</a>
+			</p>
+			<p style="padding-bottom: 5px;"><del>RS 4600</del>
+				<b>RS 4200</b></p>
+		</div>
+		<img src="../images/star.png" style="width: 120px;" height="40px">
+		<p>(121 Reviews)</p>
+		
+		</div>
+
+
+		<div class="plant">
+			<div class="content">
+		<img class="images" src="../images/3.jpg">
+		
+		</div>
+		
+		<div class="desc"> <h1 style="padding-bottom: 5px;">Golden Gate Ficus</h1>
+            <p style="padding-bottom: 7px;">This beautiful Golden Gate ficus bonsai tree is actually 
+				not as difficult to take <a href="GoldenFicusPlant.html">more...</a>
+				 </p>
+			<p style="padding-bottom: 5px;"><del>RS 6500</del>
+			<b>RS 6000</b></p>
+		</div>
+		<img src="../images/star.png" style="width: 120px;" height="40px">
+		<p>(50 Reviews)</p>
+		
+</div>
+
+		<div class="plant">
+			<div class="content">
+
+		<img class="images" src="../images/11.jpg">
+		
+		</div>
+		
+		<div class="desc"> <h1 style="padding-bottom: 5px;">Tupidanthus</h1>
+			<p style="padding-bottom: 9px;">It can reach heights of 
+				<a href="Tupindanthus.html">more...</a></p>
+			<p style="padding-bottom: 5px;"><del>Rs 350</del>
+				<b>Rs 300</b></p>
+			
+		</div>
+		<img src="../images/star.png" style="width: 120px;" height="40px">
+		<p>(350 Reviews)</p>
+		
+
+</div>
+	     <div class="plant">
+			<div class="content">
+		<img class="images" src="../images/12.jpg">
+		<p>uddvhgshfvghsvjs</p>
+		</div>
+		
+		<div class="desc"> <h1 style="padding-bottom: 5px;">Dracanea</h1>
+			<p style="padding-bottom: 9px;">The corn plant is an oldie but goodie <a href="Dracanea.html">more...</a>
+			</p>
+			<p><del>Rs 1000</del>
+			<b>Rs 800</b></p>
+		</div>
+		<img src="../images/star.png" style="width: 120px;" height="40px">
+		<p>(250 Reviews)</p>
+
+		
+
+</div>
+        <div class="plant">
+			<div class="content">
+		<img class="images" src="../images/bestsales2.jpg">
+	    
+		</div>
+		
+		<div class="desc"> <h1 style="padding-bottom: 5px;">Bonsai Starter kit</h1>
+			
+				<p style="padding-bottom: 9px;">Bonsai Starter set is best for the beginnersThis Juniper Starter Kit includes our most 
+					 <a href="BonsaiStarterKit.html">more...</a>.</p>
+		</div>
+		<p style="padding-bottom: 5px;"><b>Rs 1200</b></p>
+		<img src="../images/star.png" style="width: 120px;" height="40px">
+		<p>(450 Reviews)</p>
+		
+		
+</div>
+        <div class="plant">
+			<div class="content">
+			<img class="images" src="../images/4.jpg">
+			
+			</div>
+			
+			<div class="desc"> 
+				<h1 style="padding-bottom: 8px;">Satsuki Azalea - Pink Blossom</h1>
+				<p style="padding-bottom: 5px;">This flowering bonsai tree produces coral 
+					pink blooms that add a refreshing <a href="SatsukiAzalea.html">more...</a></p>
+				<p style="padding-bottom: 5px;">RS 900</p>
+			</div>
+			<img src="../images/star.png" style="width: 120px;" height="40px">
+		<p>(150 Reviews)</p>
+		
+	
+</div>
+
+          <div class="plant">
+			<div class="content">
+		<img class="images" src="../images/5.jpg">
+		
+		</div>
+		
+		<div class="desc"> <h1 style="padding-bottom: 5px;">Boxwood Bonsai</h1>
+			<p style="padding-bottom: 9px;">The Boxwood's tiny leathery leaves, dense growth habits<a href="Boxwood.html">more...</a></p>
+			<p style="padding-bottom: 5px;">RS 1100</p>
+		</div>
+		
+			<img src="../images/star.png" style="width: 120px;" height="40px">
+			<p>(90 Reviews)</p>
+			
+		
+	</div>
+	
+			
+
+		</div>
+	
+
+
+     
+
+
+	</div>
+    
+	<section>
+		<footer>
+		
+		<div class="footer-content">
+		<h3>Bonsai Bliss</h3>
+		<p>Creating your way through the darkness</p>
+		<hr>
+		<h1>CONTACT US</h1>
+		<p>9803947468</p>
+		<p >abcd@gmail.com</p>
+		<hr>
+		<h1>FOLLOW US</h1>
+		<div style="display: flex;">
+		<img style="width: 30px; height: 30px;"src="../images/fb.png">
+		<img style="width: 60px; height: 30px;"src="../images/insta.png">
+		
+		</div>
+		</div>
+		<div class="footer-bottom">
+		<p>copyright &copy; 2023;Bonsai Bliss. Designed by <span>Team 3</span></p>
+		</div>
+		</footer>
+		
+		</section>
+		
+		
+</body>
+</html>
+
+<!--html part ends here-->
+
+
+<!--Internal JavaScript-->
+<script> //Images slider java script
+    var images = ['b.jpg','c.jpg','d.jpg'];
+
+    var x = 0;
+    var imgs = document.getElementById('img');
+    //The setInterval() calls a function at theintervals (in milliseconds). 
+    setInterval(slider, 2000);
+
+    function slider() {
+
+      if (x < images.length) 
+        {
+        x = x + 1;
+        } 
+
+      else 
+        {
+        x = 1;
+        }
+
+
+      imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+    }
+  </script>
+
+  <!--Image slider javascript ends here-->
+
+  <!--Popup when clicked on Add to cart button start from here-->
+<script>
+	let popup = document.getElementById("popup");
+
+	function openPopup(){ 
+		popup.classList.add("open-popup"); //add class name is called from the css
+	}
+
+	function closePopup(){
+		popup.classList.remove("open-popup"); //remove and class name is called to remove the features in css
+	}
+</script>
+
+
+<script>
+	let popup1 = document.getElementById("popup1");
+
+	function openPopup1(){
+		popup1.classList.add("open-popup1");
+	}
+
+	function closePopup1(){
+		popup1.classList.remove("open-popup1");
+	}
+</script>
+
+
+
+<script>
+	let popup2 = document.getElementById("popup2");
+
+	function openPopup2(){
+		popup2.classList.add("open-popup2");
+	}
+
+	function closePopup2(){
+		popup2.classList.remove("open-popup2");
+	}
+</script>
+
+
+<script>
+	let popup3 = document.getElementById("popup3");
+
+	function openPopup3(){
+		popup3.classList.add("open-popup3");
+	}
+
+	function closePopup3(){
+		popup3.classList.remove("open-popup3");
+	}
+</script>
+
+
+
+<script>
+	let popup4 = document.getElementById("popup4");
+
+	function openPopup4(){
+		popup4.classList.add("open-popup4");
+	}
+
+	function closePopup4(){
+		popup4.classList.remove("open-popup4");
+	}
+</script>
+
+
+
+<script>
+	let popup5 = document.getElementById("popup5");
+
+	function openPopup5(){
+		popup5.classList.add("open-popup5");
+	}
+
+	function closePopup5(){
+		popup5.classList.remove("open-popup5");
+	}
+</script>
+
+
+
